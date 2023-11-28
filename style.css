@@ -1,1 +1,158 @@
+*{
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+body{
+  padding-bottom: 50px;
+}
+header{
+  margin: 50px auto;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+}
+header > div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.toggle{
+  flex-direction: row;
+}
+.button{
+  background-color: hsl(230, 22%, 74%);
+  width:40px;
+  height: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 1px;
+  cursor: pointer;
+}
+.button small{
+  width:20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+main{
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.social{
+  display: flex;
+  gap: 20px;
+}
+.social-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  gap: 20px;
+  width: 200px;
+}
+.social-item > div{
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top:0;
+  border-radius: 10px 10px 0 0;
+}
+.fb{
+  background-color: hsl(208, 92%, 53%);
+}
+.twitter{
+  background-color: hsl(203, 89%, 53%);
+}
+.insta{
+  background-image: linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+}
+.youtube{
+  background-color: hsl(348, 97%, 39%);
+}
+.social-item P{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.username{
+  font-size: 12px;
+  font-weight: bold;
+  color: hsl(230, 17%, 14%);
+}
+.followers{
+  font-size: 12px;
+  color: hsl(228, 12%, 44%);
+  letter-spacing: 3px;
+}
+.green, .red{
+  font-size: 12px;
+  font-weight: bold;
+  color: hsl(163, 72%, 41%);
+}
+.red{
+  color: hsl(356, 69%, 56%);
+}
+
+.overview{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+h3, h4{
+  color: hsl(228, 12%, 44%);
+}
+.overview-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.overview-item{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: hsl(225, 100%, 98%);
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+}
+.overview-item > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* dark mode  */
+.dark{
+  background-color: hsl(230, 17%, 14%);
+}
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark p{
+  color: white;
+}
+.dark .button{
+  justify-content: start;
+  background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+.dark .button small{
+  background-color: hsl(230, 17%, 14%);
+}
+.dark .social-item{
+  background-color: hsl(228, 28%, 20%);
+}
+.dark .overview-item{
+  background-color: hsl(228, 28%, 20%);
+}
 
